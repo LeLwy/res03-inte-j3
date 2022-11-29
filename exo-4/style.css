@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*****POLICES*****/
 
 /*Special*/
@@ -52,7 +56,7 @@ body h2{
     font-family: var(--special-font);
     text-align: center;
     text-transform: uppercase;
-    margin: 10vh 0;
+    margin: 6vh 0;
 }
 
 /*****PARAGRAPHES*****/
@@ -116,73 +120,132 @@ body > main > section:first-of-type span{
 
 /**********A PROPOS**********/
 
-body > main > section:nth-child(2){
+body > main > section:nth-of-type(2){
     padding: 2vh 6vw;
 }
-body > main > section:nth-child(2) > article{
+body > main > section:nth-of-type(2) > section{
     display: inline-block;
     width: 49%;
     padding: 4vh 4vw;
 }
 
-body > main > section:nth-child(2) > article > p{
+body > main > section:nth-of-type(2) > section > p{
     margin-bottom: 2vh;
 }
 
 
-body > main > section:nth-child(2) > article > p > a{
+body > main > section:nth-of-type(2) > section > p > a{
     text-decoration: underline;
     color: var(--fushia);
 }
 
 /**********LES COURS**********/
 
-body > main > section:nth-child(3){
-    padding: 12vh 4vw;
+body > main > section:nth-of-type(3){
+    padding: 12vh 5vw;
     background-color: var(--bleu-clair);
 }
 
-body > main > section:nth-child(3) > h2{
+body > main > section:nth-of-type(3) > h2{
     color: var(--blanc);
 }
 
-body > main > section:nth-child(3) > article{
+body > main > section:nth-of-type(3) > article{
     display: inline-block;
-    width: 24%;
-    border-radius: 30px;
+    width: 28%;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px var(--bleu-gris);
 }
 
-body > main > section:nth-child(3) > article > header{
+body > main > section:nth-of-type(3) > article > header{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    text-align: center;
+    padding: 6vh 3vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-body > main > section:nth-child(3) > article > header:first-of-type{
-    background-image: url(img/developpement.jpg);
+body > main > section:nth-of-type(3) > article:first-of-type > header{
+    background-image: url(img/code.jpeg);
 }
 
-body > main > section:nth-child(3) > article > header:nth-child(2){
-    background-image: url(img/design.jpg);
+body > main > section:nth-of-type(3) > article:nth-of-type(2) > header{
+    background-image: url(img/design.jpeg);
 }
 
-body > main > section:nth-child(3) > article > header:last-of-type{
-    background-image: url(img/projet.jpg);
+body > main > section:nth-of-type(3) > article:last-of-type > header{
+    background-image: url(img/management.jpeg);
 }
 
-body > main > section:nth-child(3) > article > header > h3{
-    font-size: 1.8rem;
+body > main > section:nth-of-type(3) > article > header > h3{
+    font-size: 1.6rem;
     color: var(--blanc);
+    text-transform: uppercase;
 }
 
-body > main > section:nth-child(3) > article > main{
+body > main > section:nth-of-type(3) > article > section{
     background-color: var(--blanc);
     padding: 3vh 1vw;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /**********AGENDA**********/
 
+body > main > section:nth-of-type(4){
+    padding: 12vh 2vw;
+}
+
+body > main > section:nth-of-type(4) > article{
+    display: inline-block;
+    border: solid 1px var(--noir);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px var(--noir);
+    width: 22%;
+    padding: 1vh 1vw;
+    margin: 1%;
+    text-align: center;
+}
+
+body > main > section:nth-of-type(4) > article > header > h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5vh;
+}
+
+body > main > section:nth-of-type(4) > article > header > p{
+    font-size: 1.5rem;
+    font-weight: 50;
+    margin-bottom: 2vh;
+}
+
+body > main > section:nth-of-type(4) > article > section > p{
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
+}
+
 /**********CONTACT**********/
+
+body > main > section:last-of-type{
+    background-color: #326584;
+    color: var(--blanc);
+}
+
+body > main > section:last-of-type > section{
+    display: inline-block;
+    width: 49%;
+    padding: 4vh 4vw;
+}
+
+body > main > section:last-of-type > section:first-of-type{
+
+}
+
+body > main > section:last-of-type > section:last-of-type{
+
+}
 
 /********************BODY********************/
 /********************BODY********************/
