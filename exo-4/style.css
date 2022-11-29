@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****POLICES*****/
+
+/*Special*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bitter', serif; */
+
+/*Main*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+
+/*****ROOT*****/
+
+:root{
+
+    /*Couleurs*/
+
+    --blanc: #ffffff;
+    --noir: #000000;
+    --fushia: #d52a54;
+    --bleu-clair: #0b6ccd;
+    --bleu: #326584;
+    --bleu-gris: #1e5d62;
+    --bleu-pale: #c5d4de;
+
+    /*Polices*/
+
+    --main-font: 'Open Sans', sans-serif;
+    --special-font: 'Bitter', serif;
+
+}
+
+/********************BODY********************/
+
+body{
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+}
+
+/*****TITRES*****/
+
+body h2{
+    font-size: 3rem;
+    font-family: var(--special-font);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10vh 0;
+}
+
+/*****PARAGRAPHES*****/
+
+/*****LIENS*****/
+
+body a{
+    text-decoration: none;
+}
+
+/********************HEADER********************/
+
+body > header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--fushia);
+    padding: 2.7vh 10vw;
+}
+
+body > header > nav{
+    width: 90%;
+    margin: auto;
+}
+
+body > header > nav > ul > li{
+    display: inline-block;
+    margin-right: 12%;
+}
+
+body > header > nav > ul > li > a{
+    font-size: 1.2rem;
+    color: var(--blanc);
+}
+
+/********************MAIN********************/
+
+/********************SECTIONS********************/
+
+/**********ACCUEIL**********/
+
+body > main > section:first-of-type{
+    background-image: url(img/teacher.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--blanc);
+    text-align: left;
+    padding: 15% 10%;
+}
+
+body > main > section:first-of-type > h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+body > main > section:first-of-type > p{
+    font-size: 3.5rem;
+}
+body > main > section:first-of-type span{
+    color: var(--fushia);
+}
+
+/**********A PROPOS**********/
+
+body > main > section:nth-child(2){
+    padding: 2vh 6vw;
+}
+body > main > section:nth-child(2) > article{
+    display: inline-block;
+    width: 49%;
+    padding: 4vh 4vw;
+}
+
+body > main > section:nth-child(2) > article > p{
+    margin-bottom: 2vh;
+}
+
+
+body > main > section:nth-child(2) > article > p > a{
+    text-decoration: underline;
+    color: var(--fushia);
+}
+
+/**********LES COURS**********/
+
+body > main > section:nth-child(3){
+    padding: 12vh 4vw;
+    background-color: var(--bleu-clair);
+}
+
+body > main > section:nth-child(3) > h2{
+    color: var(--blanc);
+}
+
+body > main > section:nth-child(3) > article{
+    display: inline-block;
+    width: 24%;
+    border-radius: 30px;
+}
+
+body > main > section:nth-child(3) > article > header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body > main > section:nth-child(3) > article > header:first-of-type{
+    background-image: url(img/developpement.jpg);
+}
+
+body > main > section:nth-child(3) > article > header:nth-child(2){
+    background-image: url(img/design.jpg);
+}
+
+body > main > section:nth-child(3) > article > header:last-of-type{
+    background-image: url(img/projet.jpg);
+}
+
+body > main > section:nth-child(3) > article > header > h3{
+    font-size: 1.8rem;
+    color: var(--blanc);
+}
+
+body > main > section:nth-child(3) > article > main{
+    background-color: var(--blanc);
+    padding: 3vh 1vw;
+}
+
+/**********AGENDA**********/
+
+/**********CONTACT**********/
+
+/********************BODY********************/
+/********************BODY********************/
+/********************BODY********************/
+/********************BODY********************/
