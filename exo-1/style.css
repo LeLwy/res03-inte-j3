@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+/*Couleurs :*/
+
+--blanc: #ffffff;
+--noir: #000000;
+--bleu-clair: #c2cae8;
+--bleu-median: #4455b3;
+--bleu-fonce: #0e2872;
+
+/*Polices :*/
+
+--main-font: 'Arial', sans-serif;
+
+}
+
+body{
+    font-family: var(--main-font);
+    background-color: var(--noir);
+    height: 100vh;
+}
+
+/**********MAIN**********/
+
+body > main{
+    width: 96vw;
+    height: 100%;
+    margin: auto;
+    background-color: var(--bleu-median);
+}
+
+/**********FORM**********/
+
+body > main > form{
+    width: 38vw;
+    position: relative;
+    padding: 4vh 9vw;
+    left: 29vw;
+    top: 25%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--bleu-fonce);
+    background-color: var(--blanc);
+}
+
+/*H1*/
+
+body > main > form > h1{
+    text-align: center;
+    color: var(--bleu-median);
+    font-size: 3.5em;
+    margin-bottom: 5vh;
+}
+
+/***FIELDSETS***/
+
+body > main > form > fieldset{
+    border: none;
+}
+
+body > main > form > fieldset > *{
+    display: block;
+}
+
+/*LABELS*/
+
+body > main > form > fieldset > label{
+    font-weight: 800;
+    margin-bottom: .5vh;
+}
+
+/*INPUTS*/
+
+body > main > form > fieldset > input{
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 1.5vh 0;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--bleu-clair);
+}
+
+/*BUTTON*/
+
+body > main > form > fieldset > button{
+    margin: 1vh 0 5vh 0;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    color: var(--blanc);
+    background-color: var(--bleu-median);
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 5px var(--bleu-fonce);
+}
